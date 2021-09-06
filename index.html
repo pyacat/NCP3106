@@ -3,20 +3,76 @@
      <head>
         <meta charset="UTF-8" />
         <title>PORTFOLIO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
     </head>
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
     <body>
-        <h1>
-            MY PORTFOLIO
-        </h1>
-        <div>
-            <img src="Patrick_Picture.jpg" alt="Boy in a UE UNIFROM" style="width: 200px; height: 200px; border-radius: 50%;">
+        <h1>PORTFOLIO</h1>
+        <div class="wrapper">
+            
+            <img class="img-me" src="Patrick_Picture.jpg" alt="Boy in a UE UNIFROM">
+            <br>
+            <div class="img-info">
+                <h2>
+                    PATRICK YACAT<hr style="width: 19%; margin-left: 750px;">Computer Engineering Student
+                </h2>
+            </div>
         </div>
-        <h2>
-            PATRICK L. YACAT
-        </h2>
-        <a href="MP1_2.html"><h3 style="font-size: 20px;">MACHINE PROBLEM 1</h3></a>
-        <a href="MP1_2.html"><h4 style="font-size: 20px;">MACHINE PROBLEM 2</h4></a>
-        <a href=""><h4 style="font-size: 20px;">MACHINE PROBLEM 3</h4></a>
+        <div id="slider">
+   <input type="radio" name="slider" id="slide1" checked>
+   <input type="radio" name="slider" id="slide2">
+   <input type="radio" name="slider" id="slide3">
+   <input type="radio" name="slider" id="slide4">
+   <div id="slides">
+      <div id="overflow">
+         <div class="inner">
+            <div class="slide slide_1">
+               <div class="slide-content">
+                  <h3>MACHINE PROBLEM 1</h3>
+                  <button type="button" onclick="window.location.href='MP1.html'">VIEW!</button>
+                  
+               </div>
+            </div>
+            <div class="slide slide_2">
+               <div class="slide-content">
+                  <h3>MACHINE PROBLEM 2</h3>
+                  <button type="button" onclick="window.location.href='MP2.html'">VIEW!</button>
+                
+               </div>
+            </div>
+            <div class="slide slide_3">
+               <div class="slide-content">
+                  <h3>MACHINE PROBLEM 3</h3>
+                  <button type="button" onclick="window.location.href=''">VIEW!</button>
+                 
+               </div>
+            </div>
+            <div class="slide slide_4">
+               <div class="slide-content">
+                  <h3>MACHINE PROBLEM 4</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+   <div id="bullets">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+</div>
+        
+       
         
     </body>
 </html>
